@@ -1,0 +1,214 @@
+/* Universal and page-wide format and styling for generic tags*/
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 0;
+    font-family:Helvetica, sans-serif;
+    color: #1F2937;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100px;
+    border-radius: 8px;
+    padding: 3px 0px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bolder;
+    border-style: solid;
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Common properties for all sections of the webpage */
+.header,
+.content,
+.info,
+.quote,
+.sign-up,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 80%;
+    padding: 0% 10%;
+}
+
+.content,
+.info,
+.quote,
+.sign-up {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+/* Header */
+.header {
+    justify-content: space-between;
+    background-color: #1F2937;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.header--logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header--links {
+    display: flex;
+    gap: 32px;
+}
+
+/* Content */
+.content {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.content--main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content--title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.content--text {
+    font-size: 18px;
+}
+
+.content--main button {
+    border: none;
+}
+
+.content--image {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.content--image img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Info */
+.info {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.info--title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.info--container {
+    display: flex;
+    gap: 32px;
+}
+
+.info--square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.info--square img {
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 8px;
+
+    width: 200px;
+    height: 200px;
+}
+
+/* Quote */
+.quote {
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.quote--text {
+    font-size: 36px;
+    font-style: italic;
+    width: 80%;
+}
+
+.quote--signature {
+    text-align: right;
+    font-weight: bolder;
+    width: 80%;
+}
+
+/* Sign-up */
+.sign-up--container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 36px 0px;
+    background-color: #3882F6;
+    border-radius: 8px;
+}
+
+.sign-up--main{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up--title {
+    font-size: 24px;
+    color:#F9FAF8
+}
+
+.sign-up--text {
+    color:#F9FAF8
+}
+
+/* Footer */
+.footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+
