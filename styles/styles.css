@@ -161,6 +161,7 @@ ul {
 .quote {
     flex-direction: column;
     background-color: #E5E7EB;
+    gap: 8px;
 }
 
 .quote--text {
