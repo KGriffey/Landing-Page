@@ -1,10 +1,12 @@
 /* Universal and page-wide format and styling for generic tags*/
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    margin: 0;
     font-family:Helvetica, sans-serif;
     color: #1F2937;
 }
@@ -33,23 +35,9 @@ button:hover {
     opacity: 0.75;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0px;
-}
-
-p {
-    margin: 0px;
-}
-
 ul {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+
 }
 
 /* Common properties for all sections of the webpage */
@@ -62,7 +50,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex: 1 1 0%;
     width: 80%;
     padding: 0% 10%;
 }
@@ -84,12 +72,15 @@ ul {
 }
 
 .header--logo {
+    flex: 1;
     font-size: 24px;
     color: #F9FAF8;
 }
 
 .header--links {
     display: flex;
+    flex: 1;
+    justify-content: flex-end;
     gap: 32px;
 }
 
@@ -102,6 +93,7 @@ ul {
 .content--main {
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 8px;
 }
 
@@ -119,12 +111,12 @@ ul {
 }
 
 .content--image {
+    flex: 1;
     width: 50%;
-    flex-shrink: 0;
 }
 
 .content--image img {
-    width: 500px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -136,12 +128,15 @@ ul {
 }
 
 .info--title {
+    flex: 1;
     font-size: 36px;
     font-weight: bolder;
 }
 
 .info--container {
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -149,6 +144,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
     gap: 8px;
 }
 
@@ -174,6 +170,7 @@ ul {
 }
 
 .quote--signature {
+    flex: 1;
     text-align: right;
     font-weight: bolder;
     width: 80%;
@@ -182,6 +179,7 @@ ul {
 /* Sign-up */
 .sign-up--container {
     display: flex;
+    flex: 1;
     justify-content: space-evenly;
     width: 100%;
     padding: 36px 0px;
